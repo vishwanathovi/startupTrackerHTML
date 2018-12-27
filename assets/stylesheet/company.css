@@ -91,6 +91,7 @@ table {
   font-family: "Raleway", sans-serif;
   position: relative;
   height: 40vh;
+  top: 50px;
   width: 100%;
 }
 
@@ -134,7 +135,7 @@ table {
 }
 
 .logo-name .hero-comp__name {
-  color: #4B505B;
+  color: #6e7073;
   margin-left: 30px;
   padding-top: 10px;
   font-weight: 800;

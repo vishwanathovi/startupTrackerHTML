@@ -97,6 +97,7 @@ table {
     font-family: $font-family;
     position: relative; //for placement of line and logo can find better alternative
     height: 40vh;
+    top:50px;//will change after header done 
     width: 100%; //width of wrapper
     // border: 1px solid black; //not required just for refrence
     .line-design {
@@ -134,7 +135,7 @@ table {
     }
 
     .hero-comp__name {
-        color: #6e7073
+        color: #6e7073;
         margin-left: 30px;
         padding-top: 10px;
         font-weight: 800;

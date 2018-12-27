@@ -1,105 +1,291 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>alt-project</title>
+	<title>alt-project</title>
 
-		<link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
 
-		<!-- font awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-	</head>
-	<body>
-		<main>
+</head>
+<body>
+	<main>
+		<!-- primary header -->
+		<header class="primary-header">
+			<!-- <div>header-logo-box</div> -->
+			<nav class="primary-nav">
+				<ul>
+					<li class="list"><a href="#"><i class="fab fa-apple logo"></i></a></li>
+					<!-- search box -->
+					<div class="header-input-box">
+						<i class="fas fa-search"></i>
+						<input class="header-search" type="text" name="search" placeholder="search">
+					</div>
+				</ul>
+			</nav>
+		</header>
 
-				<!-- primary header -->
-			<header class="primary-header">
-				<!-- <div>header-logo-box</div> -->
-				<nav class="primary-nav">
-					<ul>
-						<li class="list"><a href="#"><i class="fab fa-apple logo"></i></a></li>
-
-							<!-- search box -->
-							<div class="header-input-box">
-								<i class="fas fa-search"></i>
-								<input class="header-search" type="text" name="search" placeholder="search">
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-			<!--hero section -->
-			<section class="hero">
+		<!--hero section -->
+		<section class="hero">
+			<div class="wrapper">
 
 				<!-- search box -->
 				<div class="hero-input-box">
 					<input class="hero-search" type="text" name="search-box" placeholder="search">
 					<i class="fas fa-search"></i>
 				</div>
-			</section>
 
-		</main>
+				<!-- cards section -->
+				<section class="card-sec">
 
-		<!-- primary footer -->
-		<footer class="primary-footer">
+					<!-- Card 1 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/zomato.png">
+						<div class="right">
+							<h2 is="title" >Zomato</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Delhi
+								</span>
+								<span> Series E </span>
+								<!-- <span> #3 in Food Sector</span> -->
+							</div>
+						</div>
+					</div>
 
-			<!-- social media section -->
-			<section class="info-sec">
+					<!-- Card 2 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/hackerearth.png">
+						<div class="right">
+							<h2 is="title" >HackerEarth</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Bangalore
+								</span>
+								<span> Series A </span>
+								<!-- <span> #22 in Education</span> -->
+							</div>
+						</div>
+					</div>
 
-				<div class="info-container">
+					<!-- Card 3 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/instalmojo.jpeg">
+						<div class="right">
+							<h2 is="title" >InstaMojo</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Bangalore
+								</span>
+								<span> Series B</span>
+								<!-- <span> #58 in Finance</span> -->
+							</div>
+						</div>
+					</div>
 
-					<!-- footer nav -->
-					<nav class="info-nav">
-						<ul class="info-list">
-							<li class="info"><a href="#">home</a></li>
-							<li class="info"><a href="#">about us</a></li>
-							<li class="info"><a href="#">catagories</a></li>
-							<li class="info"><a href="#">contact us</a></li>
-						</ul>
-					</nav>
-				</div>
+					<!-- Card 4 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/lookup.png">
+						<div class="right">
+							<h2 is="title" >LookUp</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Bangalore
+								</span>
+								<span> Seed</span>
+								<!-- <span> #58 in Logistics</span> -->
+							</div>
+						</div>
+					</div>
 
-				<!-- link container -->
-				<div class="social-links-container">
+					<!-- Card 5 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/zoomcar.png">
+						<div class="right">
+							<h2 is="title" >ZoomCar</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Hyderabad
+								</span>
+								<span> Series D</span>
+								<!-- <span> #3 in Transport</span> -->
+							</div>
+						</div>
+					</div>
 
-					<!-- social links -->
+					<!-- Card 1 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/zomato.png">
+						<div class="right">
+							<h2 is="title" >Zomato</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Delhi
+								</span>
+								<span> Series E </span>
+								<!-- <span> #3 in Food Sector</span> -->
+							</div>
+						</div>
+					</div>
 
-					<h3>follow us</h3>
-					<nav class="social-links-nav">
-						<ul class="social-link-list">
-							<li class="social-links">
-								<a class="social-links" href="#">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-							</li>							
-							<li class="social-links">
-								<a class="social-links" href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-							</li>							
-							<li class="social-links">
-								<a class="social-links" href="#">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-							</li>
-							<li class="social-links">
-								<a class="social-links" href="#">
-								<i class="fab fa-instagram"></i>
-							</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+					<!-- Card 2 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/hackerearth.png">
+						<div class="right">
+							<h2 is="title" >HackerEarth</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Bangalore
+								</span>
+								<span> Series A </span>
+								<!-- <span> #22 in Education</span> -->
+							</div>
+						</div>
+					</div>
 
-			<!-- hr  footer line -->
-			<div class="hr-line"></div>
+					<!-- Card 3 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/instalmojo.jpeg">
+						<div class="right">
+							<h2 is="title" >InstaMojo</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Bangalore
+								</span>
+								<span> Series B</span>
+								<!-- <span> #58 in Finance</span> -->
+							</div>
+						</div>
+					</div>
 
-			<!-- copyright text -->
-			<small class="footer-copyright">copyright &copy; all rights reserved | made with <i class="fas fa-heart"></i> by altcampus team. :)</small>
-		</footer>
-	</body>
+					<!-- Card 4 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/lookup.png">
+						<div class="right">
+							<h2 is="title" >LookUp</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Bangalore
+								</span>
+								<span> Seed</span>
+								<!-- <span> #58 in Logistics</span> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 5 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/zoomcar.png">
+						<div class="right">
+							<h2 is="title" >ZoomCar</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Hyderabad
+								</span>
+								<span> Series D</span>
+								<!-- <span> #3 in Transport</span> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Card 5 -->
+					<div class="small-card">
+						<img id="logo" src="./assets/media/zoomcar.png">
+						<div class="right">
+							<h2 is="title" >ZoomCar</h2>
+							<div id="details" class="details">
+								<span>
+									<i class="fas fa-map-marker-alt"></i>
+									Hyderabad
+								</span>
+								<span> Series D</span>
+								<!-- <span> #3 in Transport</span> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Placeholder -->
+					<div class="small-card">
+						<h2 class="title placeholder" >More...</h2>
+					</div>
+
+				</section>
+			</div>
+		</section>
+	</main>
+
+	<!-- primary footer -->
+	<footer class="primary-footer">
+
+		<!-- social media section -->
+
+
+
+		<!-- footer nav -->
+<!-- 			<div class="info-container">
+				<nav class="info-nav">
+					<ul class="info-list">
+						<li class="info"><a href="#">home</a></li>
+						<li class="info"><a href="#">about us</a></li>
+						<li class="info"><a href="#">catagories</a></li>
+						<li class="info"><a href="#">contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+		-->
+
+		<!-- copyright text -->
+		<small class="footer-copyright">copyright &copy; all rights reserved | made with <i class="fas fa-heart"></i> by altcampus team. :)</small>
+
+		<!-- link container -->
+		<div class="social-links-container">
+
+			<!-- social links -->
+
+			<h3>follow us:</h3>
+			<nav class="social-links-nav">
+				<ul class="social-link-list">
+					<li class="social-links">
+						<a class="" href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>							
+					<li class="social-links">
+						<a class="" href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>							
+					<li class="social-links">
+						<a class="" href="#">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+					<li class="social-links">
+						<a class="" href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- hr  footer line -->
+		<!-- <div class="hr-line"></div> -->
+
+
+	</footer>
+</body>
 </html>

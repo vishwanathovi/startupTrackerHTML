@@ -7,89 +7,89 @@
 
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
-*/
+  */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-
-
-/*=============================================*/
-    /*		border box and css reset 		*/
-/*=============================================*/
-
-
-*,*:before, *:after {
-	box-sizing: border-box;
-}
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
 
 
-/*====clearfix====*/
+  /*=============================================*/
+  /*		border box and css reset 		*/
+  /*=============================================*/
+
+
+  *,*:before, *:after {
+   box-sizing: border-box;
+ }
 
 
 
-.cf:before, .cf:after {
-	content: "";
-	display: table;
-}
-.cf:after {
-	clear: both;
-}
-.cf {
-	clear: both;
-	*zoom: 1;
-}
+ /*====clearfix====*/
 
 
 
-/*=============================================*/
-            /*    basic css    */
-/*=============================================*/
+ .cf:before, .cf:after {
+   content: "";
+   display: table;
+ }
+ .cf:after {
+   clear: both;
+ }
+ .cf {
+   clear: both;
+   *zoom: 1;
+ }
 
 
-.wrapper {
+
+ /*=============================================*/
+ /*    basic css    */
+ /*=============================================*/
+
+
+ .wrapper {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -149,7 +149,7 @@ input:hover {
 
 
 /*=============================================*/
-            /*    main css    */
+/*    main css    */
 /*=============================================*/
 
 
@@ -159,20 +159,31 @@ body {
   width: 100%;
 }
 
+.wrapper{
+  width:70vw;
+}
+
 .hero {
   width: 100%;
-  height: 100vh;
+  /*height: 300vh;*/
   position: relative;
   background-color: dodgerblue;
   background: linear-gradient(90deg, #FAA4F2, #145583);
+  display:grid;
+  grid-gap: 20px;
+  align-items: center;
+  padding:40px;
 }
 
 
 .hero-input-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  position: relative;
+  /*display: inline-block;*/
+  /*width: 60vw;*/
+  margin:0 auto;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%,-50%);*/
 }
 
 .hero-search ~ i {
@@ -186,7 +197,7 @@ body {
 .hero-search {
   position: relative;
   display: inline-block;
-  width: 60vw;
+  width: 70vw;
   font-size: 2.5rem;
   padding: 1rem;
   padding-left: 5.5rem;
@@ -204,12 +215,12 @@ body {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
-  margin-bottom: 4rem;
+  /*margin-bottom: 4rem;*/
 }
 
 
 /*=============================================*/
-            /*    header section    */
+/*    header section    */
 /*=============================================*/
 
 
@@ -221,7 +232,7 @@ body {
 
 
 /*=============================================*/
-            /*    primary nav ul    */
+/*    primary nav ul    */
 /*=============================================*/
 
 
@@ -282,26 +293,93 @@ body {
 
 
 /*=============================================*/
-           /*MAIN CATAGORIES SECTION    */
+/*MAIN CATAGORIES SECTION    */
 /*=============================================*/
 
 
 .card-sec {
-  height: 100vh;
-  background-color: tomato;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+  justify-content: center;
+  justify-items:center;
+  padding:40px 10px;
+  grid-gap:20px;
 }
 
+.small-card {
+  border: 1px solid #ccc;
+  width: 300px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  align-items: center;
+  text-align: left;
+  /*margin: 30px;*/
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: -10px 6px 8px 0px rgba(0,0,0,0.3);
+  background:white;
+}
+
+.small-card img{
+  width:70px;
+  /*border:1px solid #ccc;*/
+}
+
+.small-card .right {
+  /*place-self: center;*/
+  padding: 0 20px;
+  justify-items: start;
+  align-items: center;
+}
+.small-card h2 {
+  font-size: 20px;
+  padding: 0 0 3px 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: helvetica;
+}
+.small-card .details {
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-card .details span{
+  margin:2px 4px;
+  background: #eee8;
+  padding: 4px 6px;
+  border-radius: 1px;
+  box-shadow: -1px 1px 1px 0px #ccc;
+}
+
+.small-card .placeholder{
+  padding:0 40px;
+}
 
 /*=============================================*/
-           /*  primary footer  */
+/*  primary footer  */
 /*=============================================*/
 
 
 .primary-footer {
   width: 100%;
-  padding: 2rem 10%;
+  padding:20px 10px;
+  /*padding: 2rem 10%;*/
   text-transform: capitalize;
   background-color: #383b43;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items:center;
+  color:#ccc !important;
+}
+
+.footer-copyright{
+  /*border-right:2px solid #eee;*/
 }
 
 .info-sec {
@@ -326,25 +404,44 @@ body {
   width: 100%;
 }
 
-.social-links-container {
-  width: 15vw;
+.social-link-list i{
+  margin:5px;
 }
+
+.social-links-container {
+  /*width: 15vw;*/
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items:center;
+}
+
 
 .social-links-container h3 {
   color: #f3f3f3;
   font-weight: bold;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
-.social-links i,
-.info {
-  color: black;
-  font-size: 1.5rem;
+.social-links {
+  border:1px solid #eee;
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
+  display: grid;
+  place-items:center;
+  margin: 0px 5px;
+}
+
+.social-links i{
+  color: #ccc;
+  font-size: 1.2rem;
+
 }
 
 .social-links i:hover {
   color: #fff;
-  text-shadow: 0 0 10px green;
+  /*text-shadow: 0 0 10px green;*/
 }
 
 .info a:hover {
@@ -381,7 +478,7 @@ body {
 
 
 @media all and (min-width: 340px) and (max-width:600px) {
-  
+
   :root{
     font-size: 8px;
   }
@@ -389,18 +486,18 @@ body {
   .info-sec,
   .about-box,
   .social-links-box
-   {
+  {
     display: block;
   }
 
   /*.social-links-box{
     margin: 0 auto;
-  }*/
+    }*/
   /*.social-links {
     display: inline-block;
-  }*/
+    }*/
 
   /*.about-box {
     display: none;
-  }*/
-}
+    }*/
+  }

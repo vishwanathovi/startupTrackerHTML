@@ -12,7 +12,8 @@
 
 
 .display-card {
-    width: 75%;
+    font-weight: 600;
+    width: 72%;
     height: 300px;
     border-radius: 5px;
     box-shadow: 10px 10px 20px 0px #c0bcbc,-10px 10px 20px 0px #c0bcbc;

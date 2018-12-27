@@ -96,7 +96,7 @@ table {
 .hero-comp {
     font-family: $font-family;
     position: relative; //for placement of line and logo can find better alternative
-    height: 60vh;
+    height: 40vh;
     width: 100%; //width of wrapper
     // border: 1px solid black; //not required just for refrence
     .line-design {
@@ -122,6 +122,7 @@ table {
     overflow: hidden;
 
     img {
+      width: 100%;
       position: absolute;
         object-fit: cover;
         object-position: 50% 50%;
@@ -134,5 +135,6 @@ table {
     position: absolute;
     top: 46%;
     left: 25%;
-    font-size: 2rem;
+    font-weight: 800;
+    font-size: 1.8rem;
 }

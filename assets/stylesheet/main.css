@@ -4,7 +4,6 @@
 
 /* 		css reset 		*/
 
-
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
   */
@@ -64,11 +63,7 @@
    box-sizing: border-box;
  }
 
-
-
  /*====clearfix====*/
-
-
 
  .cf:before, .cf:after {
    content: "";
@@ -89,22 +84,11 @@
  /*=============================================*/
 
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem
-}
-h3 {
-  font-size: 1.8rem;
-}
-h4 {
-  font-size: 1.3rem;
-}
-h5 {
-  font-size: 1.2rem;
-}
+h1 {font-size: 3rem;}
+h2 {font-size: 2rem}
+h3 {font-size: 1.8rem;}
+h4 {font-size: 1.3rem;}
+h5 {font-size: 1.2rem;}
 
 h1, h2, h3, h4, h5, p {
   margin: 0.6rem 0;
@@ -424,7 +408,6 @@ body {
 }
 
 .social-links-container {
-  /*width: 15vw;*/
   display: grid;
   grid-template-columns: auto auto;
   justify-content: start;
@@ -456,8 +439,6 @@ body {
 
 .social-links:hover {
   background: #999;
-
-  /*text-shadow: 0 0 10px green;*/
 }
 
 .info a:hover {

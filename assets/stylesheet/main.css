@@ -89,12 +89,6 @@
  /*=============================================*/
 
 
- .wrapper {
-  max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 h1 {
   font-size: 3rem;
 }
@@ -152,29 +146,34 @@ input {
 body {
 	text-align: center;
   width: 100%;
+  font-family: "Verdana", sans-serif;
 }
 
 .wrapper{
-  width:70vw;
+  width:90vw;
+  max-width: 960px;
+  margin:0 auto;
 }
 
 .hero {
   width: 100%;
   /*height: 300vh;*/
   position: relative;
-  background-color: dodgerblue;
-  background: linear-gradient(90deg, #FAA4F2, #145583);
+  /*background-color: #4F518C;*/
+  /*background: linear-gradient(90deg, #DABFFF20, #2C2A4A20);*/
+  background: #4F518C10;
   display:grid;
   grid-gap: 20px;
   align-items: center;
   padding:40px;
   padding-top:200px;
+  /*background: url(./../media/tiny-squares.png) !important;*/
 }
 
 
 .hero-input-box {
   position: relative;
-  /*display: inline-block;*/
+  display: inline-block;
   /*width: 60vw;*/
   margin:0 auto;
   /*top: 50%;*/
@@ -182,7 +181,7 @@ body {
   /*transform: translate(-50%,-50%);*/
 }
 
-.hero-search ~ i {
+.hero-search + i {
   position: absolute;
   font-size: 2.8rem;
   top: 50%;
@@ -193,7 +192,8 @@ body {
 .hero-search {
   position: relative;
   display: inline-block;
-  width: 70vw;
+  width: 90vw;
+  max-width: 960px;
   font-size: 2.5rem;
   padding: 1rem;
   padding-left: 5.5rem;
@@ -225,10 +225,28 @@ body {
   top: 0;
   left:0;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   z-index: 2;
-  background-color: rgba( 0, 255, 255, 0.4);
+  background-color: #2C2A4A;
 }
+
+.header-text{
+  font-size: 46px;
+}
+
+.inverse-header{
+  color:#2C2A4A;
+  background-color: white;
+  font-weight: 600;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.header-text-part2{
+  padding-left:3px;
+  color:#fff;
+}
+
 
 
 /*=============================================*/
@@ -246,7 +264,7 @@ body {
 .list a {
   font-size: 2rem;
   color: #888;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 .list a:hover {
@@ -296,7 +314,7 @@ body {
 
 .card-sec {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(290px, 1fr) );
   justify-content: center;
   justify-items:center;
   padding:40px 10px;
@@ -337,7 +355,7 @@ body {
   font-family: helvetica;
 }
 .small-card .details {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   color: #444;
   padding-top: 10px;
@@ -367,12 +385,12 @@ body {
   padding:20px 10px;
   /*padding: 2rem 10%;*/
   text-transform: capitalize;
-  background-color: #383b43;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items:center;
-  color:#ccc !important;
+  color:#fff !important;
+  background: #2C2A4AEE;
 }
 
 .footer-copyright{
@@ -421,22 +439,24 @@ body {
 }
 
 .social-links {
-  border:1px solid #eee;
+  border:1px solid #fff;
   border-radius: 50%;
   width:40px;
   height: 40px;
   display: grid;
   place-items:center;
   margin: 0px 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 .social-links i{
-  color: #ccc;
+  color: #fff;
   font-size: 1.2rem;  
 }
 
-.social-links i:hover {
-  color: #fff;
+.social-links:hover {
+  background: #999;
+
   /*text-shadow: 0 0 10px green;*/
 }
 
@@ -469,9 +489,6 @@ body {
   color: red;
   text-shadow: 0 0 0.6rem white;
 }
-
-
-
 
 @media all and (min-width: 340px) and (max-width:600px) {
 

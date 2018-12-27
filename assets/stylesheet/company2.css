@@ -12,7 +12,8 @@
 
 
 .display-card {
-    width: 75%;
+    font-weight: 600;
+    width: 72%;
     height: 300px;
     border-radius: 5px;
     box-shadow: 10px 10px 20px 0px #c0bcbc,-10px 10px 20px 0px #c0bcbc;
@@ -20,10 +21,10 @@
     margin: 50px auto;
     color:  #4B505B;;
     background :#E9E9E9;
-    padding: 5px 20px;
+    padding: 15px 20px;
 }
 
 hr.company-details {
 
-    border: 1.5px solid #CCC9C9;;
+    border-top: 3px solid #CCC9C9;;
 }

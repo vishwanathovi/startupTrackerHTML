@@ -108,33 +108,36 @@ table {
     }
 }
 
-.hero-comp__logo-container {
-    width: 150px;
-    height: 150px;
+.logo-name {
+    display: flex;
+
+    // justify-content: space-between;
+    align-items: center;
     position: absolute;
-    top: 27%;
+    top: 24%;
     left: 10%;
-    border-radius: 7px;
-    border: 2px solid $section-line;
-    display: grid;
-    place-items: center;
-    background: red; //for refrence
-    overflow: hidden;
 
-    img {
-      width: 100%;
-      position: absolute;
-        object-fit: cover;
-        object-position: 50% 50%;
+    .hero-comp__logo-container {
+        width: 120px;
+        height: 120px;
+        border-radius: 7px;
+        border: 2px solid $section-line;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
 
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
     }
-}
 
-.hero-comp__name {
-    color: $font-color;
-    position: absolute;
-    top: 46%;
-    left: 25%;
-    font-weight: 800;
-    font-size: 1.8rem;
+    .hero-comp__name {
+        color: #6e7073
+        margin-left: 30px;
+        padding-top: 10px;
+        font-weight: 800;
+        font-size: 2rem;
+    }
 }

@@ -102,36 +102,42 @@ table {
   top: 40%;
 }
 
-.hero-comp__logo-container {
-  width: 150px;
-  height: 150px;
+.logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
-  top: 27%;
+  top: 24%;
   left: 10%;
+}
+
+.logo-name .hero-comp__logo-container {
+  width: 120px;
+  height: 120px;
   border-radius: 7px;
   border: 2px solid #CCC9C9;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: red;
   overflow: hidden;
 }
 
-.hero-comp__logo-container img {
+.logo-name .hero-comp__logo-container img {
   width: 100%;
-  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
 }
 
-.hero-comp__name {
+.logo-name .hero-comp__name {
   color: #4B505B;
-  position: absolute;
-  top: 46%;
-  left: 25%;
+  margin-left: 30px;
+  padding-top: 10px;
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=company.css.map */

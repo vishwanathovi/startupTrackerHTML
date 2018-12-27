@@ -139,20 +139,15 @@ input {
   color: #666;
 }
 
-input:hover {
-  -webkit-input-placeholder: blue;
-}
-
 ::-webkit-input-placeholder {
   font-size: 3rem;
+  text-transform: capitalize;
 }
 
 
 /*=============================================*/
 /*    main css    */
 /*=============================================*/
-
-
 
 body {
 	text-align: center;
@@ -173,6 +168,7 @@ body {
   grid-gap: 20px;
   align-items: center;
   padding:40px;
+  padding-top:200px;
 }
 
 
@@ -225,9 +221,13 @@ body {
 
 
 .primary-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  left:0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 2;
+  background-color: rgba( 0, 255, 255, 0.4);
 }
 
 
@@ -239,12 +239,8 @@ body {
 .primary-nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center; 
-}
-
-.list {
-  padding: 2rem;
 }
 
 .list a {
@@ -259,13 +255,13 @@ body {
 
 .header-input-box 
 .header-search {
-  width: 20rem;
-  padding: 0.2rem 1.8rem;
+  width: 23rem;
+  padding: 0.6rem 2rem 0.6rem 3rem;
   font-size: 1.3rem;
   color: #666;
-  border-radius: 20px;
+  border-radius: 40px;
   border: 1px solid rgba(0,0,0,0.2);
-  box-shadow: -10px 6px 8px 0px rgba(0,0,0,0.5);
+  box-shadow: -10px 5px 8px 0px rgba(0,0,0,0.2);
 }
 
 .header-input-box {
@@ -275,7 +271,7 @@ body {
 .header-input-box i {
   position: absolute;
   top: 50%;
-  left: 3%;
+  left: 7%;
   transform: translate(0,-50%);
 }
 
@@ -284,16 +280,17 @@ body {
 }
 
 .header-search:focus {
-  border-color: #FAA4F2;
+  border-color: blue;
 }
 
 .logo {
+  color: white;
   font-size: 4rem;
 }
 
 
 /*=============================================*/
-/*MAIN CATAGORIES SECTION    */
+           /*MAIN CATAGORIES SECTION    */
 /*=============================================*/
 
 
@@ -384,7 +381,7 @@ body {
 
 .info-sec {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .info-list .info {
@@ -488,15 +485,4 @@ body {
   {
     display: block;
   }
-
-  /*.social-links-box{
-    margin: 0 auto;
-    }*/
-  /*.social-links {
-    display: inline-block;
-    }*/
-
-  /*.about-box {
-    display: none;
-    }*/
-  }
+}

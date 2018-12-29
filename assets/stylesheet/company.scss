@@ -99,16 +99,21 @@ body {
 
 .hero-comp {
     font-family: $font-family;
-    background: white; //will change with theme
+    background-color: white; //will change with theme
     // position: relative; //for placement of line and logo can find better alternative
     height: 100vh;
     top: 50px; //will change after header done
     width: 100%; //width of wrapper
+    background-image: url("../media/triangles.svg");
+    background-repeat: no-repeat;
+    filter: hue-rotate(110deg);
+    background-position: right;
+
     // border: 1px solid black; //not required just for refrence
     .line-design {
         height: 4px;
         width: 100%;
-        background: $section-line; //for refrence
+        background: linear-gradient(to right, #026ca3, #03667d, #00b4b2, #01a94f, #01a94f05 80%); //for refrence
         position: absolute;
         top: 40%;
     }
@@ -126,13 +131,13 @@ body {
 
 .logo-name {
     display: flex;
-
+    
     // justify-content: space-between;
     align-items: center;
     position: absolute;
     top: 24%;
     left: 10%;
-
+    
     .hero-comp__logo-container {
         width: 120px;
         height: 120px;
@@ -141,8 +146,11 @@ body {
         display: grid;
         place-items: center;
         overflow: hidden;
-
+        
         img {
+            // filter: hue-rotate(-120deg);
+            filter: hue-rotate(240deg);
+            // filter:  !important;
             width: 100%;
             object-fit: cover;
             object-position: 50% 50%;
@@ -204,7 +212,8 @@ body {
             color: #4B505B;
             text-transform: capitalize;
         }
-        p{
+
+        p {
             line-height: 1.5;
         }
 

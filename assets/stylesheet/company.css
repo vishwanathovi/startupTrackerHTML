@@ -93,16 +93,22 @@ body {
 
 .hero-comp {
   font-family: "Raleway", sans-serif;
-  background: white;
+  background-color: white;
   height: 100vh;
   top: 50px;
   width: 100%;
+  background-image: url("../media/triangles.svg");
+  background-repeat: no-repeat;
+  -webkit-filter: hue-rotate(110deg);
+          filter: hue-rotate(110deg);
+  background-position: right;
 }
 
 .hero-comp .line-design {
   height: 4px;
   width: 100%;
-  background: #CCC9C9;
+  background: -webkit-gradient(linear, left top, right top, from(#026ca3), color-stop(#03667d), color-stop(#00b4b2), color-stop(#01a94f), color-stop(80%, #01a94f05));
+  background: linear-gradient(to right, #026ca3, #03667d, #00b4b2, #01a94f, #01a94f05 80%);
   position: absolute;
   top: 40%;
 }
@@ -139,6 +145,8 @@ body {
 }
 
 .logo-name .hero-comp__logo-container img {
+  -webkit-filter: hue-rotate(240deg);
+          filter: hue-rotate(240deg);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

@@ -80,10 +80,7 @@ body {
   background-color: white;
   padding: 20px 0;
   top: 50px;
-  width: 100%;
-  background-repeat: no-repeat;
-  filter: hue-rotate(110deg);
-  background-position: right; }
+  width: 100%; }
   .hero-comp .line-design {
     height: 4px;
     width: 100%;
@@ -113,7 +110,6 @@ body {
     place-items: center;
     overflow: hidden; }
     .logo-name .hero-comp__logo-container img {
-      filter: hue-rotate(240deg);
       width: 100%;
       object-fit: cover;
       object-position: 50% 50%; }
@@ -148,7 +144,8 @@ body {
         font-weight: bold; }
   .hero-details .about {
     border-left: 1px solid #CCC9C9;
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    z-index: 3; }
     .hero-details .about h2 {
       text-align: left;
       font-weight: bold;
@@ -168,7 +165,7 @@ body {
   .hero-details2 .overview-card {
     grid-row: 1 / span 2; }
     .hero-details2 .overview-card .overview-text {
-      font-size: 14px !important;
+      font-size: 16px !important;
       text-align: left;
       line-height: 1.4;
       color: #000 !important; }

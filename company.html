@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Company Details</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/stylesheet/main.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/stylesheet/company.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/stylesheet/company2.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
   <!-- <script src="></script> -->
 </head>
+
 <body>
   <!-- HEADER -->
-  <header>
-
+  <header class="primary-header">
+    <!-- <div>header-logo-box</div> -->
+    <nav class="primary-nav">
+      <ul>
+        <li class="list"><a href="#">
+            <h2 class="header-text"><span class="inverse-header">ac</span><span class="header-text-part2">db</span></h2>
+          </a></li>
+        <!-- search box -->
+        <div class="header-input-box">
+          <i class="fas fa-search"></i>
+          <input class="header-search" type="text" name="search" placeholder="search">
+        </div>
+      </ul>
+    </nav>
   </header>
 
   <!-- Main -->
   <main>
-    <section class="wrapper">
+    <section class="wrapper-c">
       <section class="hero-comp">
-        <div class="line-design"></div>
-        <div class="hero-comp__logo-container">
-          <!-- for Random Img with Variable Size -->
-          <!-- <img id="logo-comp-page" src="https://picsum.photos/210/210/?random" / > -->
-          <img id="logo-comp-page" src="https://media.glassdoor.com/sqll/300494/flipkart-com-squarelogo-1433217726546.png" />
+        <div class="hero-logo">
+          <div class="line-design"></div>
+          <div class="logo-name">
+            <div class="hero-comp__logo-container">
+              <!-- for Random Img with Variable Size -->
+              <!-- <img id="logo-comp-page" src="https://picsum.photos/210/210/?random" / > -->
+              <img id="logo-comp-page" src="https://media.glassdoor.com/sqll/300494/flipkart-com-squarelogo-1433217726546.png" />
+            </div>
+            <h1 id="name-comp-page" class="hero-comp__name">Flipkart Private Limited</h1>
+          </div>
         </div>
-        <h1 id="name-comp-page" class="hero-comp__name">Flipkart Private Limited</h1>
+        <section class="hero-details">
+          <!-- LEFT DETAIL -->
+          <section class="details-card">
+            <!-- <hr class="company-details"> -->
+            <div class="company-details-container">
+              <p class="details-key">Location:</p>
+              <p id="location">Banglore</p>
+              <p class="details-key">Sector: </p>
+              <p id="">Private</p>
+              <p class="details-key">Year Founded: </p>
+              <p id="">2007</p>
+              <p class="details-key">Website: </p>
+              <p id="">www.flipkart.com</p>
+            </div>
+          </section>
+          <!-- RIGHT DETAILS -->
+          <section class="about">
+            <h2 class="about__tag">About:</h2>
+            <p class="about__content">Flipkart is India’s largest e-commerce marketplace with a registered customer base of over 100 million. In the 10 years
+            since it started, Flipkart has come to offer over 80 million products across 80+ categories including Smartphones,
+            Books, Media, Consumer Electronics, Furniture, Fashion and Lifestyle.
+            
+            Launched in October 2007, Flipkart is known for its path-breaking services like No Cost EMI and a 10-day replacement
+            policy. Flipkart was the pioneer in offering services like In-a-Day Guarantee and Same-Day-Guarantee at scale. With
+            over 1,00,000 registered sellers, Flipkart has redefined the way brands and MSME’s do business online.</p>
+            <!-- <hr class="company-details"> -->
+          </section>
+        </section>
       </section>
     </section>
 
     <!-- CARD 1 : COMPANY DETAILS -->
-    <section class="display-card">
-      <h2>COMPANY DETAILS</h2>
-      <hr class="company-details">
-    </section>
+
 
     <!-- CARD 2 : COMPANY OVERVIEW -->
-    <section class="display-card">
-      <h2>OVERVIEW</h2>
-      <hr class="company-details">
-    </section>
+
 
     <!-- CARD 3 : COMPANY PHOTO GALLERY -->
     <section class="display-card">
@@ -59,7 +101,7 @@
     <section class="display-card">
       <h2>FINANCE</h2>
       <hr class="company-details">
-      </section>
+    </section>
   </main>
 
   <!-- FOOTER -->
@@ -67,4 +109,5 @@
 
   </footer>
 </body>
+
 </html>

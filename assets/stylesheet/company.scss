@@ -96,6 +96,16 @@ table {
 body {
     background: #f5f5f5;
 }
+.svg{
+    background-image: url("../media/triangles.svg");
+    background-repeat: no-repeat;
+    filter: hue-rotate(110deg);
+    background-position: right;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
 
 .hero-comp {
     font-family: $font-family;
@@ -104,10 +114,10 @@ body {
     height: 100vh;
     top: 50px; //will change after header done
     width: 100%; //width of wrapper
-    background-image: url("../media/triangles.svg");
-    background-repeat: no-repeat;
-    filter: hue-rotate(110deg);
-    background-position: right;
+    // background-image: url("../media/triangles.svg");
+    // background-repeat: no-repeat;
+    // filter: hue-rotate(110deg);
+    // background-position: right;
 
     // border: 1px solid black; //not required just for refrence
     .line-design {
@@ -149,7 +159,7 @@ body {
         
         img {
             // filter: hue-rotate(-120deg);
-            filter: hue-rotate(240deg);
+            // filter: hue-rotate(240deg);
             // filter:  !important;
             width: 100%;
             object-fit: cover;
@@ -202,6 +212,7 @@ body {
     .about {
         border-left: 1px solid $section-line;
         padding: 15px 20px;
+        z-index: 3;
 
         // background: orange;
 

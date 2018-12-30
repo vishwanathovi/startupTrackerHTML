@@ -91,17 +91,24 @@ body {
   background: #f5f5f5;
 }
 
+.svg {
+  background-image: url("../media/triangles.svg");
+  background-repeat: no-repeat;
+  -webkit-filter: hue-rotate(110deg);
+          filter: hue-rotate(110deg);
+  background-position: right;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
 .hero-comp {
   font-family: "Raleway", sans-serif;
   background-color: white;
   height: 100vh;
   top: 50px;
   width: 100%;
-  background-image: url("../media/triangles.svg");
-  background-repeat: no-repeat;
-  -webkit-filter: hue-rotate(110deg);
-          filter: hue-rotate(110deg);
-  background-position: right;
 }
 
 .hero-comp .line-design {
@@ -145,8 +152,6 @@ body {
 }
 
 .logo-name .hero-comp__logo-container img {
-  -webkit-filter: hue-rotate(240deg);
-          filter: hue-rotate(240deg);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -199,6 +204,7 @@ body {
 .hero-details .about {
   border-left: 1px solid #CCC9C9;
   padding: 15px 20px;
+  z-index: 3;
 }
 
 .hero-details .about h2 {

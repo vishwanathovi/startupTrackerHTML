@@ -13,7 +13,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     width: 72%;
-    height: 300px;
+    /*height: 300px;*/
     border-radius: 5px;
     box-shadow: 5px 5px 10px 0px #c0bcbc,-5px 5px 10px 0px #c0bcbc;
     text-align: left;
@@ -30,4 +30,51 @@ hr.company-details {
     margin-bottom: 20px;
 }
 
+/*======================
+photo gallery module
+======================*/
+.outer-box {
+    /*box-sizing: border-box;*/
+    /*padding: 0.55rem 0;*/
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    position: relative;
+}
+img {
+    width: 32.9%;
+    padding: 0.3rem;
+}
+
+.font-icon-container {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    box-sizing: border-box;
+    display: grid;
+    align-content: center;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(255,255,255,0.7);
+}
+.left {
+    position: absolute;
+    top: 44%;
+    left: 1%;
+}
+.right {
+    position: absolute;
+    left: 95.1%;
+    top: 44%;
+}
+.font-icon-container:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.fas {
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.3);
+}
+.fas:hover {
+    color: rgba(255,255,255,1);
+}
 

@@ -182,7 +182,7 @@ body {
   /*transform: translate(-50%,-50%);*/
 }
 
-.hero-search ~ i {
+.hero-search + i {
   position: absolute;
   font-size: 2.8rem;
   top: 50%;
@@ -297,7 +297,7 @@ body {
 
 .card-sec {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(290px, 1fr) );
   justify-content: center;
   justify-items:center;
   padding:40px 10px;

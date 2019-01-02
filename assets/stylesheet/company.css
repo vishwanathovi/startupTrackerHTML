@@ -86,14 +86,34 @@ body {
     width: 100%;
     background: linear-gradient(to right, #026ca3, #03667d, #00b4b2, #01a94f 80%);
     position: absolute;
-    top: 40%; }
+    filter: hue-rotate(110deg);
+    top: 80%; }
+  .hero-comp .back-design {
+    height: 200px;
+    width: 100%;
+    background: url("https://media.glassdoor.com/sqll/300494/flipkart-com-squarelogo-1433217726546.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    opacity: 0.5; }
 
 .hero-logo {
   position: relative;
   width: 100%;
   top: 70px;
-  height: 40vh;
+  height: 260px;
   margin-bottom: 60px; }
+  .hero-logo .location-site-link {
+    position: absolute;
+    top: 105%;
+    left: 8%; }
+    .hero-logo .location-site-link .location {
+      padding: 10px 0; }
+      .hero-logo .location-site-link .location i {
+        color: #444;
+        margin-right: 5px; }
+    .hero-logo .location-site-link .website-link a:hover {
+      text-decoration: underline; }
 
 .logo-name {
   display: flex;
@@ -114,7 +134,7 @@ body {
       object-fit: cover;
       object-position: 50% 50%; }
   .logo-name .hero-comp__name {
-    color: #6e7073;
+    color: #26282b;
     margin-left: 30px;
     padding-top: 10px;
     font-weight: 800;

@@ -190,18 +190,20 @@ body {
       line-height: 1.4;
       color: #000 !important; }
   .hero-details2 .hero-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: 1px solid #ccc;
     border-radius: 5px;
-    grid-template-columns: 1fr;
     padding: 20px 10px;
-    align-items: center;
     box-shadow: -10px 6px 8px 0px rgba(0, 0, 0, 0.1); }
     .hero-details2 .hero-card .hero-card-header {
       font-size: 20px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 8px;
       color: #222;
-      font-weight: 600; }
+      font-weight: 600;
+      flex-basis: 20px; }
     .hero-details2 .hero-card .hero-card-text {
       font-size: 30px;
       padding: 20px;

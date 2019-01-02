@@ -1,4 +1,5 @@
 :root {
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     --search-font-color: #4B505B; /* For Search bar */
     --button-bg: #00AAFF; /* Applies to search input Border as well*/
@@ -9,11 +10,18 @@
     --section-line: #CCC9C9; /* Line going behind the company logo and below the section Header */
 }
 
+p {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+}
+
 .display-card {
     font-weight: 600;
     font-size: 1.3rem;
     width: 72%;
-    height: 300px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 0px #c0bcbc,-5px 5px 10px 0px #c0bcbc;
     text-align: left;
@@ -22,12 +30,83 @@
     background: white;
     padding: 15px 20px;
 }
-
-
+ 
 
 hr.company-details {
     border-top: 3px solid #CCC9C9;
     margin-bottom: 20px;
 }
 
+.ratings-cntnr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
 
+.ratings-box {
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+    padding: 1rem 0.2rem;
+    align-items: center;
+}
+
+.ceo-rating {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ceo-rating img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.rating-sec-logo {
+    margin-top: 1.5rem;
+}
+
+.star-bg i {
+   color: dodgerblue; 
+}
+
+.ratings-box img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.reviews-rating-stars {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2rem;
+}
+
+.reviews-rating-stars p {
+    margin-left: 2rem;
+}
+
+.common-review {
+    margin: 2.6rem 0 2rem 2rem;
+}
+
+.all-review-sec {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.fa-angle-right {
+    margin-left: 1rem;
+}

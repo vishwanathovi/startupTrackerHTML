@@ -70,9 +70,11 @@ hr.company-details {
     display: grid;
     grid-template-columns: 1fr 10fr;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem 0;
 }
 
 .rating-sec-logo {
+    width: 100%;
     margin-top: 1.5rem;
 }
 
@@ -90,6 +92,56 @@ hr.company-details {
     display: flex;
     align-items: baseline;
     margin-bottom: 2rem;
+}
+
+/*======================
+photo gallery module
+======================*/
+
+.outer-box {
+    /*box-sizing: border-box;*/
+    /*padding: 0.55rem 0;*/
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    position: relative;
+}
+
+img {
+    width: 32.9%;
+    padding: 0.3rem;
+}
+
+.font-icon-container {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    box-sizing: border-box;
+    display: grid;
+    align-content: center;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(255,255,255,0.7);
+}
+.left {
+    position: absolute;
+    top: 44%;
+    left: 1%;
+}
+.right {
+    position: absolute;
+    left: 95.1%;
+    top: 44%;
+}
+.font-icon-container:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.fas {
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.3);
+}
+.fas:hover {
+    color: rgba(255,255,255,1);
 }
 
 .reviews-rating-stars p {

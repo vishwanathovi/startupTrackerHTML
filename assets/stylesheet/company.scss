@@ -128,18 +128,54 @@ body {
         width: 100%;
         background: linear-gradient(to right, #026ca3, #03667d, #00b4b2, #01a94f 80%); //for refrence
         position: absolute;
-        top: 40%;
+        filter: hue-rotate(110deg);
+        top: 80%;
     }
+
+    .back-design{
+        height: 200px;
+        width: 100%;
+
+        background: url("https://media.glassdoor.com/sqll/300494/flipkart-com-squarelogo-1433217726546.png");
+        background-size: cover;
+        background-position: center;
+        filter: blur(15px);
+        opacity: 0.5;
+    }
+
+
 }
 
 .hero-logo {
     position: relative;
     width: 100%;
     top: 70px;
-    height: 40vh;
+    // height: 40vh;
+    height: 260px;
     margin-bottom: 60px;
 
     // background: red;
+
+    .location-site-link{
+        position: absolute;
+        top:105%;
+        left:8%;
+
+        .location{
+            padding:10px 0;
+            
+            i {
+                color: #444;
+                margin-right:5px;
+            }   
+
+        }
+
+        .website-link a:hover{
+            text-decoration: underline;
+        }
+
+    }
 }
 
 .logo-name {
@@ -171,11 +207,12 @@ body {
     }
 
     .hero-comp__name {
-        color: #6e7073;
+        color: #26282b;
         margin-left: 30px;
         padding-top: 10px;
         font-weight: 800;
         font-size: 2.6rem;
+        // text-shadow: -1px 1px 0px #444;
     }
 }
 
@@ -204,7 +241,7 @@ body {
             font-size: 1rem;
             display: grid;
             grid-template-columns: 2fr 3fr;
-            grid-gap: 15px;
+            grid-gap: 15px;         
 
             .details-key {
                 font-weight: bold;
@@ -256,13 +293,12 @@ body {
     }
 
     .hero-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         border: 1px solid #ccc;
-        border-radius:5px;
-        // width:300px;        
-        grid-template-columns:1fr;
+        border-radius:5px;     
         padding:20px 10px;
-        // margin:0 15px;
-        align-items:center;
         box-shadow: -10px 6px 8px 0px rgba(0,0,0,0.1);
 
         .hero-card-header{
@@ -271,8 +307,8 @@ body {
             padding-bottom:8px;
             color:#222;
             font-weight: 600;
+            flex-basis: 20px;
         }
-
 
         .hero-card-text{
             font-size:30px;

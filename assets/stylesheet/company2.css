@@ -106,8 +106,10 @@ photo gallery module
     position: relative;
 }
 
-img {
+.outer-box img {
     width: 32.9%;
+    height: 240px;
+    object-fit: cover;
     padding: 0.3rem;
 }
 
@@ -121,12 +123,12 @@ img {
     align-content: center;
     box-shadow: 0 0 0.1rem 0.1rem rgba(255,255,255,0.7);
 }
-.left {
+.outer-box .left {
     position: absolute;
     top: 44%;
     left: 1%;
 }
-.right {
+.outer-box .right {
     position: absolute;
     left: 95.1%;
     top: 44%;
@@ -136,11 +138,11 @@ img {
     background-color: rgba(0,0,0,0.4);
 }
 
-.fas {
+.outer-box .fas {
     font-size: 1.3rem;
     color: rgba(255,255,255,0.3);
 }
-.fas:hover {
+.outer-box .fas:hover {
     color: rgba(255,255,255,1);
 }
 
